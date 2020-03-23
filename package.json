@@ -16,7 +16,7 @@
   "scripts": {
     "prepublishOnly": "yarn test && yarn build",
     "build": "rimraf build && rollup -c",
-    "lint": "eslint src",
+    "lint": "eslint index.js",
     "test:ci": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test": "jest"
   },
