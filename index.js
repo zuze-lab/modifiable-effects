@@ -5,8 +5,8 @@ export const effect = fn => (...args) => (fn(...args), identity);
 export default (api, ...effects) => {
   const map = new Map();
   effects.forEach(e => {
-    const [fn, ...deps] = Array.isArray(e) ? e : [e];
-    map.set(e, api.modify(effect(fn), ...deps));
+    const arr = Array.isArray(e) ? e : [e];
+    map.set(e, api.modify(effect(arr.shift()), arr));
   });
   return (...toRemove) => {
     toRemove.forEach(r => {
