@@ -1,6 +1,6 @@
 {
   "name": "@zuze/modifiable-effects",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple side effects helper for @zuze/modifiable",
   "main": "build/cjs/index.js",
   "module": "build/esm/index.js",
@@ -23,12 +23,11 @@
   "author": "Adam Jenkins",
   "license": "ISC",
   "peerDependencies": {
-    "@zuze/modifiable": "^5.0.0"
+    "@zuze/modifiable": "^6.1.2"
   },
   "devDependencies": {
-    "@zuze/modifiable": "^5.0.0",
+    "@zuze/modifiable": "^6.1.2",
     "@babel/core": "^7.6.0",
-    "@babel/plugin-transform-runtime": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^6.0.0",

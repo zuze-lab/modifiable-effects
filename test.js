@@ -22,7 +22,7 @@ describe('with effects', () => {
       'someVal',
     ];
     const state = 'jim';
-    const m = modifiable(state, { modifiers, effects: [myEffect] });
+    const m = modifiable(state, { modifiers });
     effects(m, myEffect);
     expect(m.getState()).not.toBe(modified);
     // set someVal context
